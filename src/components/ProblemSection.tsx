@@ -1,25 +1,25 @@
 import ScrollReveal from "./ScrollReveal";
 
 const painLines = [
-  "Most ambitious builders focus on product, hiring, and execution. Very few focus on permanent distribution.",
-  "So every time they launch something new, they restart attention. Not because they failed. Because they never built something that compounds.",
+  "Most founders pour everything into product, team, and execution. Almost none invest in the one thing that carries across every venture: their public reputation.",
+  "So every time they start something new, they restart attention from scratch. Not because they failed, but because they never built something that compounds.",
 ];
 
 const costItems = [
   "Reintroducing yourself.",
   "Rebuilding trust.",
-  "Reproving credibility.",
-  "Restarting audience from zero.",
+  "Proving yourself, again.",
+  "Starting with zero audience, zero leverage.",
 ];
 
-const closingLine = "That's not a product problem. That's a leverage problem.";
+const closingLine = " That's not a product problem. That's a reputation problem.";
 
 const ProblemSection = () => (
   <section className="section-padding">
     <div className="max-w-3xl mx-auto">
       <ScrollReveal>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-12 text-gradient-ember">
-          The Leverage Gap Most Builders Ignore
+          The Problem Nobody Talks About
         </h2>
       </ScrollReveal>
 
