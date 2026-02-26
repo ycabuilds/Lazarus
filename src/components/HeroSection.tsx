@@ -38,7 +38,7 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6"
       >
-        Own Your <span className="text-gradient-ember">Permanent Distribution Advantage.</span>
+       You've Built Before. <span className="text-gradient-ember">Your Reputation Should Show It.</span>
       </motion.h1>
 
       <motion.p
@@ -47,7 +47,7 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.4 }}
         className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
       >
-        Lazarus builds narrative infrastructure that compounds across every company, project, or move you make.
+        We build your public narrative, so your name opens doors across every venture, raise, and deal you'll ever do.
       </motion.p>
 
       <motion.div
@@ -60,7 +60,7 @@ const HeroSection = () => (
           href="#book"
           className="inline-block bg-gradient-ember text-background font-bold px-8 py-4 rounded-xl text-lg animate-pulse-glow hover:scale-105 transition-transform"
         >
-          Book Your 30-Minute Call
+          See If You Qualify
         </a>
         <p className="text-sm text-muted-foreground">
           We work with max <span className="text-foreground font-medium">5 founders</span> at a time.
