@@ -57,7 +57,7 @@ const HeroSection = () => (
         className="flex flex-col items-center gap-4"
       >
         <a
-          href="#book"
+          "<a href="https://calendly.com/yeray-lazarushq/30min" target="_blank" rel="noopener noreferrer">
           className="inline-block bg-gradient-ember text-background font-bold px-8 py-4 rounded-xl text-lg animate-pulse-glow hover:scale-105 transition-transform"
         >
           See If You Qualify
