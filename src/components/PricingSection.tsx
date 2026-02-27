@@ -31,7 +31,7 @@ const PricingSection = () =>
               )}
             </ul>
             
-              href="#book"
+              "<a href="https://calendly.com/yeray-lazarushq/30min" target="_blank" rel="noopener noreferrer">
               className="block text-center border border-primary text-primary font-semibold px-6 py-3 rounded-xl hover:bg-primary/10 transition-colors">
               Apply Now
             </a>
