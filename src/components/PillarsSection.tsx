@@ -5,12 +5,12 @@ const pillars = [
   {
     icon: TrendingUp,
     title: "Credibility That Compounds",
-    desc: "Your lessons become visible. Your thinking becomes recognizable. Your name carries weight from one project to the next.",
+    desc: "When someone Googles you before a meeting, they find a founder who clearly knows what they're talking about. That impression follows you into every room.",
   },
   {
     icon: Target,
     title: "Organic Inbound You Own",
-    desc: "No ads. No chasing. No begging for attention. Build trust in public. People come to you warm. Lowest CPA channel that gets cheaper over time.",
+    desc: "Investors DM you. Podcast hosts reach out. Potential partners already trust you before the first call. All because your thinking is visible where it matters.",
   },
   {
     icon: Unlock,
