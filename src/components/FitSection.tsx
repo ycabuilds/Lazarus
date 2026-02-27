@@ -2,15 +2,16 @@ import ScrollReveal from "./ScrollReveal";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Serious founder",
-  "Plan to build more than one venture",
-  "Understand leverage and compounding",
+  "You've built something before, or you're about to",
+  "You're thinking beyond this one venture",
+  "You want your name to open doors, not just your product",
+  "You don't have time to build your presence alone",
 ];
 
 const notForYou = [
-  "Want to stay anonymous",
-  "Want quick vanity metrics",
-  "Looking for a one-off content service",
+  "You want to stay behind the scenes",
+  "You're chasing followers, not credibility",
+  "You want someone to post for you and disappear",
 ];
 
 const FitSection = () => (
@@ -32,7 +33,6 @@ const FitSection = () => (
             </ul>
           </div>
         </ScrollReveal>
-
         <ScrollReveal delay={0.2}>
           <div className="card-dark p-8 h-full">
             <h3 className="font-display text-xl font-bold mb-6 text-muted-foreground">
