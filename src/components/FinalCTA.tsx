@@ -12,7 +12,7 @@ const FinalCTA = () => (
 
       <ScrollReveal delay={0.2}>
         <a
-          href="#book"
+          "<a href="https://calendly.com/yeray-lazarushq/30min" target="_blank" rel="noopener noreferrer">
           className="inline-block bg-gradient-ember text-background font-bold px-10 py-5 rounded-xl text-xl animate-pulse-glow hover:scale-105 transition-transform mb-4"
         >
           See If You Qualify
