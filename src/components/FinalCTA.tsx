@@ -15,10 +15,10 @@ const FinalCTA = () => (
           href="#book"
           className="inline-block bg-gradient-ember text-background font-bold px-10 py-5 rounded-xl text-xl animate-pulse-glow hover:scale-105 transition-transform mb-4"
         >
-          Book Your 30-Minute Call
+          See If You Qualify
         </a>
         <p className="text-muted-foreground max-w-md mx-auto">
-          No pitch. We look at fit, timing, and leverage potential. If it's a yes, we start. If not, no pressure.
+          No pitch. We'll look at where you are, what you're building, and whether this is the right moment. If it's a fit, we can start within the week.
         </p>
       </ScrollReveal>
     </div>
