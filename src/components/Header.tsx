@@ -25,7 +25,7 @@ const Header = () => {
           
         </a>
         <a
-          href="#book"
+          "<a href="https://calendly.com/yeray-lazarushq/30min" target="_blank" rel="noopener noreferrer">
           className="bg-gradient-ember text-background font-semibold px-5 py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
 
           Book a Call
