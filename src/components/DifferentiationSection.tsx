@@ -9,10 +9,10 @@ const notItems = [
 ];
 
 const areItems = [
-  "Narrative positioning",
-  "Public credibility architecture",
+  "Your story, sharpened and made visible to the right people",
+  "A public track record that makes investors and partners come to you",
   "A compounding distribution channel you own",
-  "Your unfair advantage across every future venture",
+  "The reputation that opens every door from here forward",
 ];
 
 const DifferentiationSection = () => (
