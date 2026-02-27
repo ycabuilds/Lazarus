@@ -3,23 +3,23 @@ import ScrollReveal from "./ScrollReveal";
 const steps = [
   {
     num: "01",
-    title: "Weekly 30-min founder call",
+    title: "30-minute weekly call",
     desc: "Talk about what you're building, learning, what matters now.",
   },
   {
     num: "02",
-    title: "We shape the narrative",
+    title: "We craft your narrative",
     desc: "Positioning, story, what goes public.",
   },
   {
     num: "03",
-    title: "We execute",
+    title: "We publish and engage",
     desc: "Posts, threads, strategic replies on X. LinkedIn if bundled.",
   },
   {
     num: "04",
-    title: "You build. Your presence runs on autopilot.",
-    desc: "You don't manage it. You don't stress about it.",
+    title: "You stay focused on building.",
+    desc: "Your presence compounds in the background. Inbound starts coming. You never touch a content calendar.",
   },
 ];
 
