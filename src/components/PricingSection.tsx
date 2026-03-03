@@ -28,8 +28,8 @@ const PricingSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.02em]">
-          What You <span className="text-gradient-ember">Get</span>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.01em]">
+          What You <span className="text-gradient-ember italic">Get</span>
         </h2>
       </ScrollReveal>
 

@@ -59,10 +59,10 @@ const HeroSection = () => (
         <motion.h1
           variants={itemVariants}
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]
-                     font-bold leading-[1.0] tracking-[-0.03em] mb-6 max-w-4xl"
+                     font-bold leading-[1.05] tracking-[-0.01em] mb-6 max-w-4xl"
         >
           You've Built Before.{" "}
-          <span className="animate-shimmer-text">
+          <span className="animate-shimmer-text italic">
             Your Reputation Should Show It.
           </span>
         </motion.h1>
@@ -112,13 +112,13 @@ const HeroSection = () => (
               className="flex flex-col items-center py-6 px-4 text-center"
               style={{ background: "hsl(var(--surface-1))" }}
             >
-              <div className="font-display text-3xl md:text-4xl font-bold leading-none mb-1 glow-ember-text text-gradient-ember">
+              <div className="font-mono text-3xl md:text-4xl font-bold leading-none mb-1 glow-ember-text text-gradient-ember">
                 {stat.value}
-                <span className="text-lg font-normal text-muted-foreground ml-1">
+                <span className="text-base font-normal text-muted-foreground ml-1">
                   {stat.unit}
                 </span>
               </div>
-              <span className="text-xs text-muted-foreground mt-1">{stat.label}</span>
+              <span className="font-mono text-[0.6rem] uppercase tracking-widest text-muted-foreground mt-2">{stat.label}</span>
             </div>
           ))}
         </motion.div>

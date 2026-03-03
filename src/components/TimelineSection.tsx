@@ -35,8 +35,8 @@ const TimelineSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.02em]">
-          The 90-Day <span className="text-gradient-ember">Timeline</span>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.01em]">
+          The 90-Day <span className="text-gradient-ember italic">Timeline</span>
         </h2>
       </ScrollReveal>
 

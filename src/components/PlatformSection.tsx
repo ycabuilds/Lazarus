@@ -14,8 +14,8 @@ const PlatformSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-12 tracking-[-0.02em]">
-          Where This <span className="text-gradient-ember">Happens</span>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-12 tracking-[-0.01em]">
+          Where This <span className="text-gradient-ember italic">Happens</span>
         </h2>
       </ScrollReveal>
 

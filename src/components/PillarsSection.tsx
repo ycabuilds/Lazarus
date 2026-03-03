@@ -32,8 +32,8 @@ const PillarsSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.02em]">
-          The Core <span className="text-gradient-ember">Promise</span>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-16 tracking-[-0.01em]">
+          The Core <span className="text-gradient-ember italic">Promise</span>
         </h2>
       </ScrollReveal>
 

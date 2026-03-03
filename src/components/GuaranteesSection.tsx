@@ -31,8 +31,8 @@ const GuaranteesSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-4 tracking-[-0.02em]">
-          We Put Our <span className="text-gradient-ember">Money on It.</span>
+        <h2 className="font-display text-4xl md:text-5xl font-bold mb-4 tracking-[-0.01em]">
+          We Put Our <span className="text-gradient-ember italic">Money on It.</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mb-12 text-lg">
           Two guarantees. No fine print. If we don't deliver, you don't pay.

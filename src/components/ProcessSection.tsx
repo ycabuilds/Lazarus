@@ -37,7 +37,7 @@ const ProcessSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold mb-4 tracking-[-0.02em]">
+        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold mb-4 tracking-[-0.01em]">
           One Call a Week.
         </h2>
         <p className="font-display text-2xl md:text-3xl text-muted-foreground mb-16 tracking-[-0.01em]">

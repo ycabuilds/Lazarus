@@ -25,10 +25,10 @@ const FinalCTA = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold leading-[1.08]
+        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold leading-[1.1]
                        tracking-[-0.02em] mb-10">
           You can keep rebuilding credibility every time. Or you can{" "}
-          <span className="text-gradient-ember">build it once</span> and let it compound
+          <span className="text-gradient-ember italic">build it once</span> and let it compound
           for the rest of your career.
         </h2>
       </ScrollReveal>

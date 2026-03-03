@@ -28,8 +28,8 @@ const DifferentiationSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold mb-12 tracking-[-0.02em] leading-[1.08]">
-          This Is <span className="text-gradient-ember">Not</span> Social Media Management.
+        <h2 className="font-display text-4xl md:text-[3.5rem] font-bold mb-12 tracking-[-0.01em] leading-[1.1]">
+          This Is <span className="text-gradient-ember italic">Not</span> Social Media Management.
         </h2>
       </ScrollReveal>
 

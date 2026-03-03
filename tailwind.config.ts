@@ -14,8 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        display: ["Space Grotesk", "sans-serif"],
+        sans:    ["Inter", "sans-serif"],
+        display: ["Instrument Serif", "Georgia", "serif"],
+        serif:   ["Instrument Serif", "Georgia", "serif"],
+        mono:    ["Geist Mono", "Courier New", "monospace"],
       },
       fontSize: {
         "display-2xl": ["5.5rem",  { lineHeight: "1.0",  letterSpacing: "-0.03em",  fontWeight: "700" }],
