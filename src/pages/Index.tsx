@@ -9,6 +9,7 @@ import ProcessSection from "@/components/ProcessSection";
 import PlatformSection from "@/components/PlatformSection";
 import TimelineSection from "@/components/TimelineSection";
 import PricingSection from "@/components/PricingSection";
+import ScarcityBlock from "@/components/ScarcityBlock";
 import GuaranteesSection from "@/components/GuaranteesSection";
 import FitSection from "@/components/FitSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -48,6 +49,7 @@ const Index = () => (
       <TimelineSection />
       <SectionDivider />
       <PricingSection />
+      <ScarcityBlock />
       <SectionDivider />
       <GuaranteesSection />
       <SectionDivider />

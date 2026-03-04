@@ -1,22 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
-import { Shield, Zap } from "lucide-react";
-
-const guarantees = [
-  {
-    Icon: Shield,
-    iconColor: "text-primary",
-    stamp: "30 Days",
-    title: "30-Day Alignment Guarantee",
-    desc: "If after 30 days you don't feel like we've nailed your positioning and narrative, walk away. No questions, no invoice, no hard feelings.",
-  },
-  {
-    Icon: Zap,
-    iconColor: "text-accent",
-    stamp: "60 Days",
-    title: "60-Day Signal Guarantee",
-    desc: "If by day 60 you haven't seen real traction, inbound DMs, engagement growth, recognition from people who matter — we work for free until you do.",
-  },
-];
+import { Shield, Zap, Unlock } from "lucide-react";
 
 const GuaranteesSection = () => (
   <section className="section-padding">
@@ -26,7 +9,7 @@ const GuaranteesSection = () => (
       <ScrollReveal>
         <div className="flex items-center gap-3 mb-5">
           <span className="inline-block w-4 h-px bg-gradient-ember" />
-          <span className="section-label">09 — Risk Reversal</span>
+          <span className="section-label">09 — Our Commitment</span>
         </div>
       </ScrollReveal>
 
@@ -39,45 +22,107 @@ const GuaranteesSection = () => (
         </p>
       </ScrollReveal>
 
-      <div className="grid md:grid-cols-2 gap-6 mb-10">
-        {guarantees.map((g, i) => (
-          <ScrollReveal key={i} delay={i * 0.1 + 0.1}>
-            <div className="gradient-border card-elevated p-8 h-full relative overflow-hidden">
-              {/* Value stamp */}
-              <div className="absolute top-4 right-4 rotate-6 rounded-lg px-2 py-1"
+      <div className="grid md:grid-cols-2 gap-4 mb-0">
+
+        {/* 30-day card */}
+        <ScrollReveal delay={0.1}>
+          <div className="rounded-2xl p-8 h-full"
+            style={{ background: "hsl(var(--surface-1))" }}>
+
+            {/* Icon + badge row */}
+            <div className="flex items-center gap-3 mb-6">
+              <Shield
+                className="w-10 h-10"
+                style={{
+                  color: "hsl(22 100% 58%)",
+                  filter: "drop-shadow(0 0 12px hsl(22 100% 58% / 0.4))",
+                }}
+              />
+              <span
+                className="inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[0.6rem] font-bold uppercase tracking-widest"
                 style={{
                   background: "hsl(22 100% 58% / 0.1)",
-                  border: "1px solid hsl(22 100% 58% / 0.2)",
-                }}>
-                <span className="text-[9px] font-bold uppercase tracking-wider"
-                  style={{ color: "hsl(22 100% 58%)" }}>
-                  {g.stamp}
-                </span>
-              </div>
-
-              {/* Icon with gradient border circle */}
-              <div className="gradient-border rounded-full w-14 h-14 flex items-center justify-center mb-6"
-                style={{ background: "hsl(var(--surface-2))" }}>
-                <g.Icon className={`w-6 h-6 ${g.iconColor}`} />
-              </div>
-
-              <h3 className="font-display text-xl font-bold mb-3 tracking-[-0.01em]">{g.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">{g.desc}</p>
+                  border: "1px solid hsl(22 100% 58% / 0.25)",
+                  color: "hsl(22 100% 58%)",
+                }}
+              >
+                30d
+              </span>
             </div>
-          </ScrollReveal>
-        ))}
+
+            <h3 className="font-display text-xl font-bold mb-3 tracking-[-0.01em]">
+              Alignment Guarantee
+            </h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              If after 30 days you don't feel like we've nailed your positioning and narrative,
+              walk away. No questions, no invoice, no hard feelings.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        {/* 60-day card — more prominent */}
+        <ScrollReveal delay={0.2}>
+          <div className="rounded-2xl p-8 h-full relative overflow-hidden"
+            style={{
+              background: "hsl(var(--surface-2))",
+              border: "1px solid hsl(var(--border) / 0.4)",
+              boxShadow: "0 0 32px hsl(22 100% 58% / 0.06)",
+            }}>
+
+            {/* Icon + badge row */}
+            <div className="flex items-center gap-3 mb-6">
+              <Zap
+                className="w-10 h-10"
+                style={{
+                  color: "hsl(42 100% 50%)",
+                  filter: "drop-shadow(0 0 14px hsl(42 100% 50% / 0.5))",
+                }}
+              />
+              <span
+                className="inline-flex items-center rounded-full px-2.5 py-1 font-mono text-[0.6rem] font-bold uppercase tracking-widest"
+                style={{
+                  background: "hsl(42 100% 50% / 0.1)",
+                  border: "1px solid hsl(42 100% 50% / 0.3)",
+                  color: "hsl(42 100% 50%)",
+                }}
+              >
+                60d
+              </span>
+            </div>
+
+            <h3 className="font-display text-xl font-bold mb-3 tracking-[-0.01em]">
+              Signal Guarantee
+            </h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              If by day 60 you haven't seen real traction — inbound DMs, engagement growth,
+              recognition from people who matter — we work for free until you do.
+            </p>
+          </div>
+        </ScrollReveal>
+
       </div>
 
-      {/* No contract note */}
+      {/* No contract bar — full width */}
       <ScrollReveal delay={0.3}>
-        <div className="text-center p-6 rounded-2xl max-w-xl mx-auto"
-          style={{ background: "hsl(var(--surface-2) / 0.5)", border: "1px solid hsl(var(--border) / 0.4)" }}>
-          <p className="text-sm text-muted-foreground">
-            <span className="text-foreground font-medium">No contract. No lock-in.</span>{" "}
-            If we don't deliver exactly what we said, you don't pay.
+        <div className="flex items-center gap-3 mt-4 px-8 py-5 rounded-2xl"
+          style={{
+            background: "hsl(var(--surface-2))",
+            borderTop: "1px solid hsl(var(--border) / 0.3)",
+            borderBottom: "1px solid hsl(var(--border) / 0.3)",
+          }}>
+          <Unlock
+            className="w-5 h-5 shrink-0"
+            style={{ color: "hsl(22 100% 58% / 0.7)" }}
+          />
+          <p className="text-base font-semibold text-foreground">
+            No contract. No lock-in.{" "}
+            <span className="text-muted-foreground font-normal">
+              If we don't deliver exactly what we said, you don't pay.
+            </span>
           </p>
         </div>
       </ScrollReveal>
+
     </div>
   </section>
 );

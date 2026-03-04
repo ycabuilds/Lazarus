@@ -1,9 +1,5 @@
+import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
-
-const painLines = [
-  "Most founders pour everything into product, team, and execution. Almost none invest in the one thing that carries across every venture: their public reputation.",
-  "So every time they start something new, they restart attention from scratch. Not because they failed, but because they never built something that compounds.",
-];
 
 const costItems = [
   "Reintroducing yourself.",
@@ -13,7 +9,7 @@ const costItems = [
 ];
 
 const ProblemSection = () => (
-  <section className="section-padding">
+  <section className="section-padding-sm">
     <div className="max-w-3xl mx-auto">
 
       {/* Section label */}
@@ -30,78 +26,80 @@ const ProblemSection = () => (
         </h2>
       </ScrollReveal>
 
-      <div className="space-y-6 mb-10">
-        {painLines.map((line, i) => (
-          <ScrollReveal key={i} delay={i * 0.15}>
-            <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed">
-              {line}
-            </p>
+      {/* Pain lines — with italic ember on key phrase */}
+      <div className="space-y-6 mb-14">
+        <ScrollReveal delay={0.1}>
+          <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed">
+            Most founders pour everything into product, team, and execution. Almost none invest
+            in the one thing that carries across every venture:{" "}
+            <span className="text-gradient-ember italic">their public reputation.</span>
+          </p>
+        </ScrollReveal>
+        <ScrollReveal delay={0.2}>
+          <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed">
+            So every time they start something new, they restart attention from scratch. Not
+            because they failed, but because they never built something that compounds.
+          </p>
+        </ScrollReveal>
+      </div>
+
+      {/* "Every new venture" heading */}
+      <ScrollReveal delay={0.25}>
+        <p className="font-display text-xl md:text-2xl font-bold text-foreground mb-8">
+          Every new venture means:
+        </p>
+      </ScrollReveal>
+
+      {/* Cost items — borderless vertical list with large typography + animated divider lines */}
+      <div className="mb-14">
+        {costItems.map((item, i) => (
+          <ScrollReveal key={i} delay={0.3 + i * 0.1}>
+            <div className="group py-5 relative">
+              <div className="flex items-baseline gap-5">
+                {/* Index number */}
+                <span
+                  className="font-mono text-[0.6rem] font-bold shrink-0 w-5 tabular-nums"
+                  style={{ color: "hsl(22 100% 58% / 0.6)", letterSpacing: "0.1em" }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {/* Item text */}
+                <span className="font-display text-2xl md:text-3xl font-bold text-foreground leading-tight">
+                  {item}
+                </span>
+              </div>
+
+              {/* Animated divider line */}
+              <motion.div
+                className="absolute bottom-0 left-0 h-px"
+                style={{ background: "hsl(var(--border) / 0.4)" }}
+                initial={{ width: "0%" }}
+                whileInView={{ width: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              />
+
+              {/* Ember accent line on hover */}
+              <motion.div
+                className="absolute bottom-0 left-0 h-px origin-left"
+                style={{ background: "linear-gradient(to right, hsl(22 100% 58% / 0.6), transparent)" }}
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              />
+            </div>
           </ScrollReveal>
         ))}
       </div>
 
-      {/* "Every new venture" card — gradient-border with indexed items */}
-      <ScrollReveal delay={0.3}>
-        <div className="gradient-border card-elevated my-12 p-8 md:p-10 overflow-hidden relative">
-          {/* Ember accent bar */}
-          <div className="absolute top-0 left-0 w-full h-px bg-gradient-ember rounded-t-[inherit]" />
-          {/* Background glow */}
-          <div
-            className="absolute -top-20 -right-20 w-60 h-60 rounded-full blur-3xl pointer-events-none opacity-[0.08]"
-            style={{ background: "radial-gradient(circle, hsl(22 100% 58%) 0%, transparent 70%)" }}
-          />
-          {/* Decorative background text */}
-          <span className="absolute -top-4 -right-4 font-display text-[8rem] font-bold
-                           text-white/[0.02] leading-none pointer-events-none select-none">
-            ×4
-          </span>
-
-          <p className="relative font-display text-xl md:text-2xl font-bold text-foreground mb-8">
-            Every new venture means:
-          </p>
-          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {costItems.map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-4 p-4 rounded-xl border border-border/40"
-                style={{ background: "hsl(var(--surface-3) / 0.6)" }}
-              >
-                <span className="font-display text-xs font-bold shrink-0 w-6"
-                  style={{ color: "hsl(22 100% 58% / 0.7)" }}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-medium text-foreground/90">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </ScrollReveal>
-
-      <ScrollReveal delay={0.45}>
+      {/* Closing gradient line / bridge to Reality */}
+      <ScrollReveal delay={0.7}>
         <p className="text-xl md:text-2xl font-display font-bold text-gradient-ember text-center">
           That's not a product problem. That's a reputation problem.
         </p>
       </ScrollReveal>
 
-      {/* 9/10 callout — left border bar with oversized number */}
-      <ScrollReveal delay={0.55}>
-        <div className="mt-12 p-8 rounded-2xl border-l-2 border-primary relative overflow-hidden"
-          style={{ background: "hsl(var(--surface-2))" }}>
-          <div
-            className="absolute inset-0 pointer-events-none opacity-30"
-            style={{
-              background: "radial-gradient(ellipse at 0% 50%, hsl(22 100% 58% / 0.15) 0%, transparent 60%)",
-            }}
-          />
-          <span className="relative block font-display text-[4rem] md:text-[5rem] font-bold
-                           leading-none mb-2 text-gradient-ember glow-ember-text">
-            9/10
-          </span>
-          <span className="relative font-display text-xl md:text-2xl font-bold text-foreground">
-            ventures fail because attention comes too late.
-          </span>
-        </div>
-      </ScrollReveal>
     </div>
   </section>
 );

@@ -47,7 +47,7 @@ const HeroSection = () => (
         className="flex items-center gap-3 mb-8"
       >
         <span className="inline-block w-6 h-px bg-gradient-ember" />
-        <span className="section-label">Founder Reputation Infrastructure</span>
+        <span className="section-label" style={{ letterSpacing: "0.22em" }}>Founder Reputation Infrastructure</span>
       </motion.div>
 
       <motion.div
@@ -55,17 +55,29 @@ const HeroSection = () => (
         initial="hidden"
         animate="visible"
       >
-        {/* Main headline */}
-        <motion.h1
-          variants={itemVariants}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]
-                     font-bold leading-[1.05] tracking-[-0.01em] mb-6 max-w-4xl"
-        >
-          You've Built Before.{" "}
-          <span className="animate-shimmer-text italic">
-            Your Reputation Should Show It.
-          </span>
-        </motion.h1>
+        {/* Ambient radial glow behind headline */}
+        <div className="relative">
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px]
+                       rounded-full pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse at center, hsl(22 100% 58% / 0.15) 0%, transparent 70%)",
+              filter: "blur(40px)",
+            }}
+          />
+
+          {/* Main headline */}
+          <motion.h1
+            variants={itemVariants}
+            className="relative font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]
+                       font-bold leading-[1.05] tracking-[-0.01em] mb-6 max-w-4xl"
+          >
+            You've Built Before.{" "}
+            <span className="animate-shimmer-text italic">
+              Your Reputation Should Show It.
+            </span>
+          </motion.h1>
+        </div>
 
         {/* Subtext */}
         <motion.p
@@ -92,11 +104,15 @@ const HeroSection = () => (
             See If You Qualify
             <ArrowRight className="w-4 h-4" />
           </a>
-          <p className="self-center text-sm text-muted-foreground">
-            Max{" "}
+
+          {/* "Max 5 founders" pill badge */}
+          <span className="self-center inline-flex items-center gap-1.5 rounded-full
+                           border border-border/50 px-3 py-1.5 text-xs font-mono
+                           text-muted-foreground"
+            style={{ background: "hsl(var(--surface-1))" }}>
             <span className="text-foreground font-semibold">5 founders</span>
-            {" "}at a time
-          </p>
+            {" "}max at a time
+          </span>
         </motion.div>
 
         {/* Stats bar — gap-px hairline divider pattern (Pitch.com / Linear technique) */}
@@ -109,10 +125,10 @@ const HeroSection = () => (
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="flex flex-col items-center py-6 px-4 text-center"
+              className="flex flex-col items-center py-8 px-4 text-center"
               style={{ background: "hsl(var(--surface-1))" }}
             >
-              <div className="font-mono text-3xl md:text-4xl font-bold leading-none mb-1 glow-ember-text text-gradient-ember">
+              <div className="font-mono text-4xl md:text-5xl font-bold leading-none mb-1 glow-ember-text text-gradient-ember">
                 {stat.value}
                 <span className="text-base font-normal text-muted-foreground ml-1">
                   {stat.unit}
