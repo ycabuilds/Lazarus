@@ -11,17 +11,6 @@ const RealitySection = () => (
   <section className="section-padding">
     <div className="max-w-4xl mx-auto">
 
-      {/* ── Bridge divider from Problem ── */}
-      <ScrollReveal>
-        <div className="flex items-center gap-4 mb-16 max-w-3xl mx-auto">
-          <div className="flex-1 h-px" style={{ background: "linear-gradient(to right, transparent, hsl(22 100% 58% / 0.35))" }} />
-          <p className="font-display text-base md:text-lg italic text-muted-foreground/70 text-center px-2 shrink-0 max-w-xs">
-            That's not a product problem. That's a reputation problem.
-          </p>
-          <div className="flex-1 h-px" style={{ background: "linear-gradient(to left, transparent, hsl(22 100% 58% / 0.35))" }} />
-        </div>
-      </ScrollReveal>
-
       {/* ── 9/10 full-width standalone moment ── */}
       <ScrollReveal delay={0.1}>
         <div className="relative text-center mb-20 max-w-3xl mx-auto">
